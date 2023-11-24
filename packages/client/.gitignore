@@ -1,0 +1,19 @@
+*.log
+*.tsbuildinfo
+.DS_Store
+.webpack/
+ci/apt/packages
+dist/
+node_modules/
+build/
+storybook-screenshots/
+storybook-static/
+# for jest --coverage
+coverage/
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+.pnp.*

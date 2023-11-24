@@ -1,0 +1,19 @@
+{
+  "name": "@template/server",
+  "version": "1.0.0",
+  "main": "src/entry_point.ts",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.4",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node src/entry_point.ts",
+    "dev": "concurrently yarn tsc --watch nodemon -q src/entry_point.ts"
+  }
+}
